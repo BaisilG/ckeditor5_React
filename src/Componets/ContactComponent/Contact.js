@@ -1,6 +1,7 @@
-
-
+// npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 import React from 'react';
+import ClassicEditor from '@ckeditor/cdeditor5-build-classic';
+import ckeditor, { CKEditor } from '@ckeditor/ckeditor5-react'
 // //import { render } from '@testing-library/react';
 export default class ContactUs extends React.Component{
     state ={
@@ -13,6 +14,7 @@ export default class ContactUs extends React.Component{
     handleChange = (event)=>{
         const target = event.target;
         const {name, value} = target;
+
         this.setState({
             [name]: value
         });
@@ -48,7 +50,17 @@ render(){
 
               <div className="form-gourp">
               <label>Message</label>
+{/*               
               <textarea cols="25" rows="14" type="text" name= "content" value={this.state.content } onChaange={this.handleChange} className="form-control" placeholder="Enter Message"/>
+               */}
+                
+               <CKEditor
+               editor={ClassicEditor}
+               onInit={editor=>{
+
+               }}
+               />
+
               </div>
 
               <div className="form-gourp">
