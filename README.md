@@ -66,3 +66,19 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+what are the things which you need to do from the scratch
+    1. Delete all uncesseary things from your app.
+
+How to start with the CKEditor5 with React!!!
+
+res Commands to run in Terminal:
+1- npm i @ckeditor/ckeditor5-react 
+
+2- npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+
+----------------------------------------------------------------------------
+
+What are the stuff, which we are using here is 
+1. bootstrap
