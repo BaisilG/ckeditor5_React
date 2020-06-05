@@ -81,4 +81,6 @@ res Commands to run in Terminal:
 ----------------------------------------------------------------------------
 
 What are the stuff, which we are using here is 
-1. bootstrap
+1. bootstrap    
+    npm install bootstrap
+    (do not forget to import the bootstrap in your main.js/ App.js like)
