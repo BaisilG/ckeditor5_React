@@ -29,6 +29,14 @@ export default class ContactUs extends React.Component{
         });
     }
 
+    handleCkeditorState =(event,editor) =>{
+      const data = editor.getData();
+      this.setState({
+        content: data
+      });
+
+    }
+
 render(){
 
     return(
@@ -68,6 +76,11 @@ render(){
                onInit={editor=>{
                    
                }}
+
+
+               onChaange={this.handleCkeditorState}
+
+
                />
 
               </div>
