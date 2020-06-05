@@ -1,8 +1,17 @@
 // npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 import React from 'react';
-import ClassicEditor from '@ckeditor/cdeditor5-build-classic';
-import ckeditor, { CKEditor } from '@ckeditor/ckeditor5-react'
-// //import { render } from '@testing-library/react';
+// import ClassicEditor from '@ckeditor/cdeditor5-build-classic';
+// import ckeditor, { CKEditor } from '@ckeditor/ckeditor5-react'
+// // //import { render } from '@testing-library/react';
+
+//import React, { Component } from 'react';
+import CKEditor from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
+
+
+
+
 export default class ContactUs extends React.Component{
     state ={
         name: '',
@@ -57,7 +66,7 @@ render(){
                <CKEditor
                editor={ClassicEditor}
                onInit={editor=>{
-
+                   
                }}
                />
 
