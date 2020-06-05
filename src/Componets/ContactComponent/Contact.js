@@ -77,6 +77,15 @@ render(){
                    
                }}
 
+               config={
+                 {
+                   ckfinder:{
+                     uploadUrl:'/uploads'
+                   }
+                 }
+
+               }
+
 
                onChaange={this.handleCkeditorState}
 
